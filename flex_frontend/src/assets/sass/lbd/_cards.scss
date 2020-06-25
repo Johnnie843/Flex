@@ -50,6 +50,9 @@
     .header{
         padding: 15px 15px 0;
     }
+    .vehicle_card_header{
+        padding: 0px 15px 0;
+    }
     .category,
     label{
         font-size: 100px;
@@ -69,6 +72,13 @@
     }
 
     .title{
+        
+        margin: $none;
+        color: $black-color;
+        font-weight: $font-weight-light;
+    }
+    .vehicle_card_title{
+        font-size: 10px;
         margin: $none;
         color: $black-color;
         font-weight: $font-weight-light;
@@ -243,5 +253,44 @@
            margin: 0;
         }
     }
+
+}
+
+.production_number,
+.label{
+    font-size: 20px;
+    font-weight: $font-weight-normal;
+    color: $black-color;
+    margin-bottom: 0px;
+
+    i{
+        font-size: $font-paragraph;
+    }background-color: hue($color: #000000);
+}
+.next_order{
+    background-color:  #a6cad8 ;
+    
+}
+
+.vehicle_card_icons{
+    text-align:center;
+    float:left;
+    padding-left: 20px;
+    padding-top: 10px;
+
+
+}
+
+hr{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.vehicle_card_data{
+    text-align:center;
+    float:left;
+    padding-left: 3px;
+    padding-top: 10px;
+    font-size: 15px;    
 
 }

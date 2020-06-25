@@ -1752,7 +1752,7 @@ body > .navbar-collapse[data-color="purple"]:after {
     padding: 15px 15px 0; }
   .card .category,
   .card label {
-    font-size: 14px;
+    font-size: 2px;
     font-weight: 400;
     color: #9A9A9A;
     margin-bottom: 0px; }
@@ -1766,7 +1766,7 @@ body > .navbar-collapse[data-color="purple"]:after {
   .card .title {
     margin: 0;
     color: #333333;
-    font-weight: 300; }
+    font-weight: 600; }
   .card .avatar {
     width: 30px;
     height: 30px;
