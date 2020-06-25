@@ -198,6 +198,7 @@
     background-color: transparent;
     box-shadow: none;
     border-radius: 0;
+    max-height: 10%;
 
     .image{
         border-radius: 4px;
@@ -225,7 +226,8 @@
 }
 .card-stats{
     border: none;
-    min-width: 500px;
+    width: 100%;
+    
     .icon-big{
         font-size: 3em;
         min-height: 64px;

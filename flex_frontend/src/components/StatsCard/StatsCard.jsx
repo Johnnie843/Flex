@@ -5,10 +5,11 @@ import { Row, Col, Button } from "react-bootstrap";
 export class StatsCard extends Component {
   render() {
     return (
+      
       <Button onClick={this.props.switchDashboard} className={this.props.btn_class}>
         <div className="content">
           <Row>
-            <Col className= "stats-col" xs={5} md={5}>
+            <Col className= "stats-col" xs={2} md={5}>
               <div className="icon-big text-center icon-warning">
                 {this.props.bigIcon}
               </div>

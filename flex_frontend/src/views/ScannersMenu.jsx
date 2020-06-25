@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid, Col} from "react-bootstrap";
+import { Grid, Col, Row} from "react-bootstrap";
 import { StatsCard } from "../components/StatsCard/StatsCard.jsx";
 import ScannerScreen from "../components/ScannerScreen/ScannerScreen.jsx";
 
@@ -21,23 +21,20 @@ class ScannersMenu extends Component {
         <Grid fluid>
         {!this.state.showScanner  ?
         <React.Fragment>
-          <div class = "container">
-          <div class = "row">
-          <Col mdOffset={2} md = {2}>
+          <Row>
+          <Col mdOffset={3} md = {6}>            
               <StatsCard
                 bigIcon={<i className="material-icons employee-icon">qr_code_scanner</i>}
                 statsText="Add Scanner"
                 statsIcon={<i className="material-icons">add</i>}
                 statsIconText="Click to add a scanner"
                 btn_class="card card-stats"
-                
               />
+              
             </Col> 
-            </div>
-            </div>
-            <div class = "container">
-          <div class = "row">
-          <Col mdOffset={2} md = {2}>
+          </Row>
+          <Row>
+          <Col mdOffset={3} md = {6}>
               <StatsCard
                 bigIcon={<i className="material-icons employee-icon">phone_android</i>}
                 statsText="Engine Scanner"
@@ -46,9 +43,8 @@ class ScannersMenu extends Component {
                 btn_class="card card-stats"
                 switchDashboard={this.showScannerApplication.bind(this)}
               />
-            </Col> 
-            </div>
-            </div>
+            </Col>
+            </Row>
             </React.Fragment>
             : null  
           } 

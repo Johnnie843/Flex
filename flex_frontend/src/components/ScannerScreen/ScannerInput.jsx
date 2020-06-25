@@ -39,15 +39,10 @@ export class ScannerInput extends Component {
         </form>
         </Row>
         <Row>
-            <Col smOffset={4} sm={6} xs={4}>
-            <ButtonToolbar>
+            <Col mdOffset={3} md ={6} xsOffset={3} xs={2}>
                 <Button bsStyle="default" round fill>
                     Verify Engine
-                </Button>
-                <Button bsStyle="default" round fill>
-                    Clear
-                </Button>
-            </ButtonToolbar>
+                </Button>  
             </Col>
         </Row>
         </div>

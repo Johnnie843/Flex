@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { Grid, Row, Col, Table,ButtonToolbar,OverlayTrigger,Tooltip, Button } from "react-bootstrap";
-import Card from "../Card/Card.jsx"
+import {Row, Col, Table} from "react-bootstrap";
+import Card from "../Card/Card.jsx";
 import SequenceTable from "../SequenceTable/SequenceTable.jsx";
-import ScannerInput from "./ScannerInput.jsx"
+import ScannerInput from "./ScannerInput.jsx" 
+import UserCard from "../UserCard/UserCard.jsx";
 
 class ScannerScreen extends Component {
 
@@ -11,42 +12,21 @@ class ScannerScreen extends Component {
     return (
       
       <div className="content">
-        <Grid fluid>
-          <Card
-                content={
                   <div class = "container">
-                    <Col mdOffset={1} md={6}>
+                    <Col>
                       <Row>
-                      <Card title="Engine Sequence"
+                      <Card title="Next Engine In Sequence"
                             category={""}
-                            ctTableFullWidth
-                            ctTableResponsive
                             content={
-                            <Table hover>
-                              <thead>
-                                <tr>
-                                  <th>Sequence Number</th>
-                                  <th>Status</th>
-                                  <th>Production Number</th>
-                                  <th>Engine Number</th>
-                                  
-                                </tr>
-                              </thead>
-                            <SequenceTable></SequenceTable>     
-                            </Table>
+                              <UserCard></UserCard>
                             }
                             >         
                         </Card>
-                        </Row>
-                        <Row>
+
                         <ScannerInput></ScannerInput>
                         </Row>
                     </Col>
-                  </div>
-                }>
-            
-          </Card>
-        </Grid>
+                  </div>                   
         </div>
     );
   }

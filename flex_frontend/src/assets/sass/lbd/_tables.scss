@@ -1,5 +1,5 @@
 .table{
-
+    overflow-x:auto !important;
    .radio,
    .checkbox{
         position: relative;
@@ -81,4 +81,10 @@
             }
         }
     }
+}
+.table_seq{
+    
+    overflow: auto;
+    display: block;
+    table-layout: auto;    
 }
