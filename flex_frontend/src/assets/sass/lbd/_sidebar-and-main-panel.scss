@@ -215,7 +215,7 @@ body > .navbar-collapse{
     }
 
     &[data-color="blue"]:after{
-        @include icon-gradient($new-dark-blue, $new-white);
+        @include icon-gradient($black-color-bottom, $new-white);
     }
     &[data-color="azure"]:after{
         @include icon-gradient($new-blue, $azure-color-bottom);

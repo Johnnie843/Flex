@@ -14,14 +14,16 @@ class ScannerScreen extends Component {
       next_engine_in_sequence: 1
     }
   }
-
   componentDidMount() {
 
     fetch('http://localhost:8000/gepard/enginesequence')
     .then((response) => response.json())
     .then(sequence => {
         this.setState({ gepard_engine_sequence: sequence.sequencePlans});
-        fetch('http://53.234.70.143:81/gepard/qsys/smotor/?format=json&spnr8='+this.state.gepard_engine_sequence[0].productionOrder+this.state.gepard_engine_sequence[0].pnrCheck)
+        
+    }).then(sequence => {
+
+      fetch('http://localhost:8000/gepard/qsys/smotor/?format=json&spnr8='+this.state.gepard_engine_sequence[0].productionOrder+this.state.gepard_engine_sequence[0].pnrCheck)
         .then((response) => response.json())
         .then(engine_info => {
               this.setState({ next_engine_in_sequence: engine_info[0].smotor_no});
@@ -30,7 +32,6 @@ class ScannerScreen extends Component {
 
     
   }
-
 
   render() {
 

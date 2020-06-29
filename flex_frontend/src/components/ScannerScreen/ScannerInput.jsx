@@ -13,20 +13,13 @@ import {
 export class ScannerInput extends Component {
   render() {
     return (
-      <div className={"card" + (this.props.plain ? " card-plain" : "")}>
-        <div
-          className={
-            "content" +
-            (this.props.ctAllIcons ? " all-icons" : "") +
-            (this.props.ctTableFullWidth ? " table-full-width" : "") +
-            (this.props.ctTableResponsive ? " table-responsive" : "") +
-            (this.props.ctTableUpgrade ? " table-upgrade" : "")
-          }
-        >
+      <div className={"card"}>
+        <div className={"content"}>
         
         <Row>
+        <div className = "scanner_input">
         <form>
-        <div className="col-md-6">
+        <Col md="auto">
         <FormGroup>
             <ControlLabel>Scan Engine</ControlLabel>
             <FormControl 
@@ -35,15 +28,16 @@ export class ScannerInput extends Component {
                 defaultValue= ""
             />               
         </FormGroup>
-        </div>
+        </Col>
         </form>
+        </div>
         </Row>
         <Row>
-            <Col mdOffset={3} md ={6} xsOffset={3} xs={2}>
-                <Button bsStyle="default" round fill>
-                    Verify Engine
-                </Button>  
-            </Col>
+          <Col className="scanner_input" xs="auto" md="auto">
+              <Button block fill>
+                  Verify Engine
+              </Button>  
+          </Col>
         </Row>
         </div>
       </div>

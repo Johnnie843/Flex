@@ -13,12 +13,12 @@ export class VehicleCard extends Component {
         <div className={"vehicle_card_header text-center"}>
           <Row>
             <div className={"next_order"}> 
-            <Col md={2}>
+            <Col md="auto">
             <h4 className="vehicle_card_title">Next Order In Sequence</h4>
             <p className="production_number">{this.props.production_number}</p>
             </Col>
             </div>
-            <Col md={1}>
+            <Col md="auto">
               <Row>
                 <div className="text-left">
                     <i className="vehicle_card_icons material-icons">directions_bus</i>
